@@ -1,0 +1,4 @@
+include sensor/schema.sql
+include sensor/static
+include sensor/templates
+global-exclude *.pyc

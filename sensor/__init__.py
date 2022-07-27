@@ -1,0 +1,1 @@
+from .sensor import app, init_db
