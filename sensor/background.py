@@ -39,7 +39,7 @@ def alert(temp, humidity):
     
     message = client.messages.create(
         messaging_service_sid=app.config.get("TWILIO_MESSAGING_ID"),
-        body='Temperature or humidity out of acceptable range, current temp is ' + str(temp) + ' degress F and humidity is '+ str(humidity) + '%.',
+        body='Temperature or humidity out of acceptable range, current temp is ' + str(temp) + ' degrees F and humidity is '+ str(humidity) + '%.',
         to=app.config.get("TWILIO_CONTACT_NUM")
         )
     print(account_sid)

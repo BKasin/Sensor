@@ -1,0 +1,8 @@
+[Unit]
+Description=Take minutely measurements of the ambient temperature, humidity, and air pressure.
+
+[Service]
+ExecStart=/bin/bash /opt/Sensor/server.sh
+
+[Install]
+WantedBy=multi-user.target
