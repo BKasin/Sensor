@@ -8,7 +8,7 @@ def get_readings():
     
     humidity = round(sense.get_humidity(), 2)
     temp = round((sense.get_temperature() * 1.8) + 32, 2) # SenseHat uses Celsius, so convert to Fahrenheit by doing 'multiply by 1.8, add 32'
-    pressure = round(sense.get_pressure(), 2)
+    pressure = round(sense.get_pressure() / 33.864, 2) # Convert to inHg
     now = datetime.now()
     current_time = now.strftime("%H:%M:%S")
 
